@@ -1,6 +1,6 @@
 import "./AddTaskDialog.css"
 
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { useState } from "react"
 import { createPortal } from "react-dom"
 import { CSSTransition } from "react-transition-group"
@@ -15,6 +15,14 @@ const AddTaskDialog = ({ isOpen, handleClose, handleSubmit }) => {
   const [title, setTitle] = useState()
   const [time, setTime] = useState("morning")
   const [description, setDescription] = useState()
+
+  useEffect(() => {
+    if (!isOpen) {
+      setTitle("")
+      setTime("morning")
+      setDescription("")
+    }
+  }, [isOpen])
 
   const handleSaveClick = () => {
     handleSubmit({
