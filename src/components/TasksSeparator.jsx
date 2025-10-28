@@ -1,8 +1,8 @@
 const TasksSeparator = ({ title, icon }) => {
   return (
-    <div className="flex gap-3 border-b border-solid border-[#F4F4F5] pb-1">
+    <div className="border-brand-border flex gap-3 border-b border-solid pb-1">
       {icon}
-      <p className="text-sm text-[#9a9c9f]">{title}</p>
+      <p className="text-brand-text-gray text-sm">{title}</p>
     </div>
   )
 }
