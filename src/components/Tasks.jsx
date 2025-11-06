@@ -86,7 +86,7 @@ const Tasks = () => {
 
       <div className="rounded-xl bg-white p-6">
         <div className="space-y-3">
-          <TasksSeparator icon={<SunIcon />} title="Manhã" />
+          <TasksSeparator icon={<SunIcon />} title={2} />
 
           {morningTasks.map((task) => (
             <TaskItem
