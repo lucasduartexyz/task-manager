@@ -39,7 +39,6 @@ Button.propTypes = {
   color: PropTypes.oneOf(["primary", "ghost", "secondary"]),
   size: PropTypes.oneOf(["small", "large"]),
   className: PropTypes.string,
-  onClick: PropTypes.func,
 }
 
 export default Button
